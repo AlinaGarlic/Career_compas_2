@@ -1,23 +1,7 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<h1>Career Compas
-</h1>
-<p><img src="C:\Users\pavlovaaa\Documents\GitHub\Career_compas_2\static\Без имени.png"></p>
-<p style="font-size: 25px;">Career Compass - открытая программа для сотрудников компании, которые хотят развития внутри BIOCAD кросс-функционально, но пока не знают куда именно и что им для этого нужно. Карьерные консультанты BIOCAD помогут определить векторы развития.</p>
-<h2> Список консультантов:</h2>
-    <ul>
-        <li>Катя</li>
-        <li>Маша</li>
-        <li>Алина</li>
-    </ul>
-  <h2>Подать заявку:</h2>
-    <form action='#' method='post'>
-        <label for="name">Имя</label><br>
-        <input type="text" id='name'
-name="name" required><br><br>
-        <label for="surname">Фамилия</label><br>
-        <input type="text" id='surname'
-surname="surname" required><br><br>
-        <label for="email">E-mail</label><br>
-        <input type="email" id="email" name="email" required><br>
-<button type="submit">Записаться</button>
+{% block title %}Home{% endblock %}
+
+{% block content %}
+ <h1>Hello, {{ name }}!</h1>
+ {% endblock %}
